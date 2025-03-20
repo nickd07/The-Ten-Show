@@ -1,13 +1,15 @@
-package thetenshow;
+package ca.sheridancollege.project;
 
-public class TheTenShow{
+import thetenshow.TheTenShowGame;
+import thetenshow.TheTenShowPlayer;
+
+public class TheTenShow {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.addPlayer("Nick"); 
-        game.addPlayer("Urva"); 
-        game.addPlayer("Utam");
-        game.addPlayer("Hardik");
-        game.startGame();
+        TheTenShowGame game = new TheTenShowGame("Game of Ten's");
+        game.addPlayer(new TheTenShowPlayer("Nick"));
+        game.addPlayer(new TheTenShowPlayer("Urva"));
+        game.addPlayer(new TheTenShowPlayer("Utam"));
+        game.addPlayer(new TheTenShowPlayer("Hardik"));
+        game.play();
     }
 }
-

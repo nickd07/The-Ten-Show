@@ -1,8 +1,5 @@
-package thetenshow;
-
+package ca.sheridancollege.project;
 
 public enum Suit {
-    HEARTS, DIAMONDS, CLUBS, SPADES; //card types
+    HEARTS, DIAMONDS, CLUBS, SPADES;
 }
-
-

@@ -1,36 +1,28 @@
-package thetenshow;
+package ca.sheridancollege.project;
 
+import java.util.ArrayList;
 
-import java.util.*;
+public abstract class Game {
+    private String name;
+    private ArrayList<Player> players;
 
-
-
-class Game {
-    private List<Player> player;
-    private Deck deck;
-
-    public Game() {
-        player = new ArrayList<>();
-        deck = new Deck();
+    public Game(String name) {
+        this.name = name;
+        this.players = new ArrayList<>();
     }
 
-    public void addPlayer(String name) {
-        player.add(new Player(name));
+    public String getName() {
+        return name;
     }
 
-    public void dealCards() {
-        for (int i = 0; i < 13; i++) {
-            for (Player player : player) {
-                player.addCard(deck.drawCard());
-            }
-        }
-        System.out.println("Cards have been dealt.");
+    public ArrayList<Player> getPlayers() {
+        return players;
     }
 
-    public void startGame() {
-        dealCards();
-        for (Player player : player) {
-            System.out.println(player);
-        }
+    public void setPlayers(ArrayList<Player> players) {
+        this.players = players;
     }
+
+    public abstract void play();
+    public abstract void declareWinner();
 }
