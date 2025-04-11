@@ -20,9 +20,13 @@ public class TheTenShowPlayer extends Player {
         return hand;
     }
 
+    public void clearHand() {
+        hand.clear();
+    }
+
     @Override
     public void play() {
-        // Add the logic for playing the card
+        // Not used directly for now
     }
 
     @Override

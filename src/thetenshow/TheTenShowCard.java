@@ -37,7 +37,7 @@ public class TheTenShowCard extends Card {
                 cardValue = "Ace";
                 break;
             default:
-                cardValue = String.valueOf(value); // For numbers 2-10
+                cardValue = String.valueOf(value); 
         }
         return cardValue + " of " + suit;
     }
