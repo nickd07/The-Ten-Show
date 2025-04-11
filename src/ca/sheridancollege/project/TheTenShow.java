@@ -5,11 +5,13 @@ import thetenshow.TheTenShowPlayer;
 
 public class TheTenShow {
     public static void main(String[] args) {
-        TheTenShowGame game = new TheTenShowGame("Game of Ten's");
-        game.addPlayer(new TheTenShowPlayer("Nick"));
-        game.addPlayer(new TheTenShowPlayer("Urva"));
-        game.addPlayer(new TheTenShowPlayer("Utam"));
-        game.addPlayer(new TheTenShowPlayer("Hardik"));
-        game.play();
+        TheTenShowGame game = new TheTenShowGame("The Ten Show");
+
+        game.addPlayer(new TheTenShowPlayer("Player 1"));
+        game.addPlayer(new TheTenShowPlayer("Player 2"));
+        game.addPlayer(new TheTenShowPlayer("Player 3"));
+        game.addPlayer(new TheTenShowPlayer("Player 4"));
+
+        game.play(); 
     }
 }
